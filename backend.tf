@@ -1,5 +1,12 @@
-# Define o provider AWS e a região onde os recursos serão criados
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
 provider "aws" {
   region = var.region
-
 }
